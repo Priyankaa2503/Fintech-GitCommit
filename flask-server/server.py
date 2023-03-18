@@ -12,5 +12,6 @@ image_1='image1.png'
 
 
 img_obj_1=Image.open(image_1)
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 text_1 = pytesseract.image_to_string(img_obj_1)
 print(text_1)
